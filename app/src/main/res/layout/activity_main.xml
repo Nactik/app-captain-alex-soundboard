@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/sound_button_men"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="17dp"
+        android:layout_weight="1"
+        android:text="I prefer men"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/sound_button_beautiful_cows"
+        app:layout_constraintEnd_toStartOf="@+id/sound_button_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sound_button_beautiful_cows"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="Beautiful cows"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/sound_button_crazy"
+        app:layout_constraintEnd_toStartOf="@+id/sound_button_very_good"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound_button_men" />
+
+    <Button
+        android:id="@+id/sound_button_crazy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="290dp"
+        android:layout_weight="1"
+        android:text="Are you crazy ?"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sound_button_goat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound_button_beautiful_cows" />
+
+    <Button
+        android:id="@+id/sound_button_no"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="17dp"
+        android:layout_weight="1"
+        android:text="NOOOOO"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/sound_button_very_good"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sound_button_men"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sound_button_very_good"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="Very good"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/sound_button_goat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sound_button_beautiful_cows"
+        app:layout_constraintTop_toBottomOf="@+id/sound_button_no" />
+
+    <Button
+        android:id="@+id/sound_button_goat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="290dp"
+        android:layout_weight="1"
+        android:text="A Goat"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sound_button_crazy"
+        app:layout_constraintTop_toBottomOf="@+id/sound_button_very_good" />
+
+
+</android.support.constraint.ConstraintLayout>
