@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button buttonGood;
     private Button buttonCrazy;
     private Button buttonGoat;
-    private MediaPlayer monSon;
+    private MediaPlayer mySong;
 
     /** It fills the song list with the name of the song file **/
     public void initSongList(List songList){
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void stop(){
-        if (monSon != null) {
-            monSon.release();
-            monSon = null;
+        if (mySong != null) {
+            mySong.release();
+            mySong = null;
         }
     }
 
@@ -73,14 +73,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         int clickedButton = (int) v.getTag();
         stop();
-        monSon = MediaPlayer.create(this, Uri.parse("android.resource://"+this.getPackageName()+ "/raw/" +songList.get(clickedButton)));
-        monSon.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        mySong = MediaPlayer.create(this, Uri.parse("android.resource://"+this.getPackageName()+ "/raw/" +songList.get(clickedButton)));
+        mySong.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 stop();
             }
         });
 
-        monSon.start();
+        mySong.start();
     }
 }
